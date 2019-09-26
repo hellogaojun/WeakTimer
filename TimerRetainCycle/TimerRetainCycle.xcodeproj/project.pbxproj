@@ -15,8 +15,11 @@
 		AD0EF3232144F191009DF003 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0EF3222144F191009DF003 /* main.m */; };
 		AD0EF32D2144F191009DF003 /* TimerRetainCycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0EF32C2144F191009DF003 /* TimerRetainCycleTests.m */; };
 		AD0EF3382144F191009DF003 /* TimerRetainCycleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0EF3372144F191009DF003 /* TimerRetainCycleUITests.m */; };
-		AD0EF3472144F1C6009DF003 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0EF3462144F1C6009DF003 /* TwoViewController.m */; };
 		AD4A6FFE214604B700031155 /* NSTimer+block.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A6FFD214604B700031155 /* NSTimer+block.m */; };
+		AD65AECE233D12580032B9EE /* GJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD65AECC233D12580032B9EE /* GJTimer.m */; };
+		AD65AED3233D12680032B9EE /* GJTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD65AECF233D12680032B9EE /* GJTimerProxy.m */; };
+		AD65AED4233D12680032B9EE /* GJTimerProxy1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD65AED2233D12680032B9EE /* GJTimerProxy1.m */; };
+		AD65AED6233D12910032B9EE /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD65AED5233D12910032B9EE /* TwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +57,17 @@
 		AD0EF3372144F191009DF003 /* TimerRetainCycleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerRetainCycleUITests.m; sourceTree = "<group>"; };
 		AD0EF3392144F191009DF003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD0EF3452144F1C6009DF003 /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
-		AD0EF3462144F1C6009DF003 /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		AD0EF3482144FA76009DF003 /* NSTimer+weakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+weakTimer.h"; sourceTree = "<group>"; };
 		AD0EF3492144FA76009DF003 /* NSTimer+weakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+weakTimer.m"; sourceTree = "<group>"; };
 		AD4A6FFC214604B600031155 /* NSTimer+block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+block.h"; sourceTree = "<group>"; };
 		AD4A6FFD214604B700031155 /* NSTimer+block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+block.m"; sourceTree = "<group>"; };
+		AD65AECC233D12580032B9EE /* GJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJTimer.m; sourceTree = "<group>"; };
+		AD65AECD233D12580032B9EE /* GJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJTimer.h; sourceTree = "<group>"; };
+		AD65AECF233D12680032B9EE /* GJTimerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJTimerProxy.m; sourceTree = "<group>"; };
+		AD65AED0233D12680032B9EE /* GJTimerProxy1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJTimerProxy1.h; sourceTree = "<group>"; };
+		AD65AED1233D12680032B9EE /* GJTimerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJTimerProxy.h; sourceTree = "<group>"; };
+		AD65AED2233D12680032B9EE /* GJTimerProxy1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJTimerProxy1.m; sourceTree = "<group>"; };
+		AD65AED5233D12910032B9EE /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +118,14 @@
 		AD0EF3122144F190009DF003 /* TimerRetainCycle */ = {
 			isa = PBXGroup;
 			children = (
+				AD65AECB233D12580032B9EE /* GCDTimer */,
 				AD4A6FFF21463F7800031155 /* weakTimer */,
 				AD0EF3132144F190009DF003 /* AppDelegate.h */,
 				AD0EF3142144F190009DF003 /* AppDelegate.m */,
 				AD0EF3162144F190009DF003 /* ViewController.h */,
 				AD0EF3172144F190009DF003 /* ViewController.m */,
 				AD0EF3452144F1C6009DF003 /* TwoViewController.h */,
-				AD0EF3462144F1C6009DF003 /* TwoViewController.m */,
+				AD65AED5233D12910032B9EE /* TwoViewController.m */,
 				AD0EF3192144F190009DF003 /* Main.storyboard */,
 				AD0EF31C2144F191009DF003 /* Assets.xcassets */,
 				AD0EF31E2144F191009DF003 /* LaunchScreen.storyboard */,
@@ -148,10 +158,23 @@
 		AD4A6FFF21463F7800031155 /* weakTimer */ = {
 			isa = PBXGroup;
 			children = (
+				AD65AED1233D12680032B9EE /* GJTimerProxy.h */,
+				AD65AECF233D12680032B9EE /* GJTimerProxy.m */,
+				AD65AED0233D12680032B9EE /* GJTimerProxy1.h */,
+				AD65AED2233D12680032B9EE /* GJTimerProxy1.m */,
 				AD4A6FFC214604B600031155 /* NSTimer+block.h */,
 				AD4A6FFD214604B700031155 /* NSTimer+block.m */,
 			);
 			path = weakTimer;
+			sourceTree = "<group>";
+		};
+		AD65AECB233D12580032B9EE /* GCDTimer */ = {
+			isa = PBXGroup;
+			children = (
+				AD65AECC233D12580032B9EE /* GJTimer.m */,
+				AD65AECD233D12580032B9EE /* GJTimer.h */,
+			);
+			path = GCDTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,11 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD65AECE233D12580032B9EE /* GJTimer.m in Sources */,
 				AD0EF3182144F190009DF003 /* ViewController.m in Sources */,
 				AD4A6FFE214604B700031155 /* NSTimer+block.m in Sources */,
+				AD65AED3233D12680032B9EE /* GJTimerProxy.m in Sources */,
 				AD0EF3232144F191009DF003 /* main.m in Sources */,
 				AD0EF3152144F190009DF003 /* AppDelegate.m in Sources */,
-				AD0EF3472144F1C6009DF003 /* TwoViewController.m in Sources */,
+				AD65AED4233D12680032B9EE /* GJTimerProxy1.m in Sources */,
+				AD65AED6233D12910032B9EE /* TwoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

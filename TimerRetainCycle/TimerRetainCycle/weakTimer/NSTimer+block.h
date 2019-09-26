@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 typedef void (^timeBlock)(id vlaue);
 
 typedef void (^offTimeBlock)(NSInteger value);
@@ -52,3 +53,4 @@ typedef void (^offTimeBlock)(NSInteger value);
 + (instancetype)timerExecuteCountPerSecond:(NSInteger)num done:(offTimeBlock)block;
 
 @end
+NS_ASSUME_NONNULL_END
